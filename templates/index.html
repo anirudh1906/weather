@@ -1,0 +1,22 @@
+<html>
+
+<body>
+
+
+
+<form action="{{url_for("predict")}}" method= "post">
+<label for="PRCP"> PRCP:</label><br>
+<input type="text" id="prcp" name="prcp" value=0><br>
+<label for="TMAX">TMAX:</label><br>
+<input type="text" id="tmax" name="tmax" value=0><br><br>
+<label for="TMIN">TMIN:</label><br>
+<input type="text" id="tmin" name="tmin" value=0><br><br>
+<input type="submit" value="Submit">
+</form>
+
+<br>
+<br>
+{{prediction_text}}
+
+</body>
+</html>
